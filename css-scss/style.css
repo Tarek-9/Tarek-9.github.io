@@ -1,0 +1,21 @@
+body {
+  background-color: #111111;
+  color: #ff6900;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  color: #ff6900;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+.header__logo {
+  height: 17.875rem;
+  width: auto;
+}/*# sourceMappingURL=style.css.map */
