@@ -1,5 +1,10 @@
 body {
   background-color: #111111;
+  background-image: url(../images/logo.webp);
+  background-repeat: no-repeat;
+  background-size: 100vh auto;
+  background-position: center;
+  background-attachment: fixed;
   color: #ff6900;
   font-family: "Inter", sans-serif;
 }
@@ -11,11 +16,7 @@ a:hover {
   text-decoration: none;
 }
 
-.header {
+.header__nav {
   display: flex;
   justify-content: space-around;
-}
-.header__logo {
-  height: 17.875rem;
-  width: auto;
 }/*# sourceMappingURL=style.css.map */

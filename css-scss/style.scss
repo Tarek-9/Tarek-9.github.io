@@ -5,25 +5,31 @@ $font-family: "Inter", sans-serif;
 
 body {
     background-color: $background-color;
+    background-image:
+        // linear-gradient(rgba($background-color, 0.5), rgba($background-color, 0.5)),
+        url(../images/logo.webp);
+    background-repeat: no-repeat;
+    background-size: 100vh auto;
+    background-position: center;
+    background-attachment: fixed;
     color: $font-color;
     font-family: $font-family;
+    // text-shadow:
+    //     -1px -1px 0 $background-color,
+    //     1px -1px 0 $background-color,
+    //     -1px 1px 0 $background-color,
+    //     1px 1px 0 $background-color;
 }
+
 a {
     color: $font-color;
+
     &:hover {
         text-decoration: none;
     }
 }
 
-.header {
+.header__nav {
     display: flex;
     justify-content: space-around;
-    &__logo {
-        height: 17.875rem;
-        width: auto;
-    }
-
-    &__nav {
-
-    }
 }
