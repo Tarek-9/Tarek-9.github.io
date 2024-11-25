@@ -3,6 +3,10 @@ $font-color: #ff6900;
 $font-family: "Inter", sans-serif;
 
 
+:root {
+    font-size: 20px;
+}
+
 body {
     background-color: $background-color;
     background-image:
@@ -14,11 +18,7 @@ body {
     background-attachment: fixed;
     color: $font-color;
     font-family: $font-family;
-    // text-shadow:
-    //     -1px -1px 0 $background-color,
-    //     1px -1px 0 $background-color,
-    //     -1px 1px 0 $background-color,
-    //     1px 1px 0 $background-color;
+    font-size: 1rem;
 }
 
 a {
@@ -29,7 +29,131 @@ a {
     }
 }
 
+h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
 .header__nav {
     display: flex;
     justify-content: space-around;
+    &__sites {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        a {
+            padding: 1rem;
+        }
+    }
+    &__social {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.introduction {
+    &__text {
+        width: 40rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        text-align: center;
+    }
+
+    &__courses {
+        width: 40rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        border: $font-color solid thin;
+        margin: 1.5rem;
+        padding: 1rem;
+
+        span {
+            color: white;
+        }
+    }
+}
+
+.vehicles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 5rem;
+    }
+
+    &__images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 2rem;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+
+            span {
+                margin: 1rem;
+            }
+        }
+    }
+}
+
+.employees {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 5rem;
+    }
+
+    &__images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 2rem;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+
+            span {
+                margin: 1rem;
+            }
+        }
+    }
+}
+
+.rooms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 50%;
+        height: auto;
+        border-radius: 5rem;
+    }
 }

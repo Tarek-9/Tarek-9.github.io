@@ -1,3 +1,7 @@
+:root {
+  font-size: 20px;
+}
+
 body {
   background-color: #111111;
   background-image: url(../images/logo.webp);
@@ -7,6 +11,7 @@ body {
   background-attachment: fixed;
   color: #ff6900;
   font-family: "Inter", sans-serif;
+  font-size: 1rem;
 }
 
 a {
@@ -16,7 +21,118 @@ a:hover {
   text-decoration: none;
 }
 
+h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
 .header__nav {
   display: flex;
   justify-content: space-around;
+}
+.header__nav__sites {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.header__nav__sites a {
+  padding: 1rem;
+}
+.header__nav__social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.introduction__text {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+}
+.introduction__courses {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  border: #ff6900 solid thin;
+  margin: 1.5rem;
+  padding: 1rem;
+}
+.introduction__courses span {
+  color: white;
+}
+
+.vehicles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vehicles img {
+  width: 100%;
+  height: auto;
+  border-radius: 5rem;
+}
+.vehicles__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 2rem;
+}
+.vehicles__images__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.vehicles__images__content span {
+  margin: 1rem;
+}
+
+.employees {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.employees img {
+  width: 100%;
+  height: auto;
+  border-radius: 5rem;
+}
+.employees__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 2rem;
+}
+.employees__images__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.employees__images__content span {
+  margin: 1rem;
+}
+
+.rooms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rooms img {
+  width: 50%;
+  height: auto;
+  border-radius: 5rem;
 }/*# sourceMappingURL=style.css.map */
