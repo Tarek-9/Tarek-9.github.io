@@ -1,14 +1,11 @@
-:root {
-  font-size: 20px;
+@font-face {
+  font-family: "Inter";
+  src: url(../schfriftart/Inter/Inter-VariableFont_opsz\,wght.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
-
 body {
   background-color: #111111;
-  background-image: url(../images/logo.webp);
-  background-repeat: no-repeat;
-  background-size: 100vh auto;
-  background-position: center;
-  background-attachment: fixed;
   color: #ff6900;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
@@ -32,26 +29,59 @@ h3 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+}
+
+em {
+  font-style: normal;
+  font-weight: 200;
+  color: white;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+}
+
+td {
+  border: solid 1px;
 }
 
 .header__nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.header__nav__logo {
+  height: 17.875rem;
+  width: 17.875rem;
 }
 .header__nav__sites {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0rem;
   display: flex;
+}
+.header__nav__sites li {
+  align-self: center;
 }
 .header__nav__sites a {
   padding: 1rem;
 }
 .header__nav__social {
   list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
+  width: 17.875rem;
+  justify-content: center;
+}
+.header__nav__social li {
+  align-self: center;
+}
+.header__nav__social a {
+  padding: 1rem;
 }
 
 .introduction__text {
@@ -83,13 +113,15 @@ p {
 }
 .vehicles img {
   width: 100%;
-  height: auto;
-  border-radius: 5rem;
+  height: 16.25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2rem;
 }
 .vehicles__images {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 0 2rem;
+  margin: 0 2rem;
 }
 .vehicles__images__content {
   display: flex;
@@ -108,13 +140,15 @@ p {
 }
 .employees img {
   width: 100%;
-  height: auto;
-  border-radius: 5rem;
+  height: 16.25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2rem;
 }
 .employees__images {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 0 2rem;
+  margin: 0 2rem;
 }
 .employees__images__content {
   display: flex;
@@ -134,5 +168,5 @@ p {
 .rooms img {
   width: 50%;
   height: auto;
-  border-radius: 5rem;
+  border-radius: 2rem;
 }/*# sourceMappingURL=style.css.map */

@@ -1,21 +1,18 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../schfriftart/Inter/Inter-VariableFont_opsz\,wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 $background-color: #111111;
 $font-color: #ff6900;
 $font-family: "Inter", sans-serif;
-
-
-:root {
-    font-size: 20px;
-}
+$width-logo: 17.875rem;
+$second-color: #0f4438;
 
 body {
     background-color: $background-color;
-    background-image:
-        // linear-gradient(rgba($background-color, 0.5), rgba($background-color, 0.5)),
-        url(../images/logo.webp);
-    background-repeat: no-repeat;
-    background-size: 100vh auto;
-    background-position: center;
-    background-attachment: fixed;
     color: $font-color;
     font-family: $font-family;
     font-size: 1rem;
@@ -40,25 +37,65 @@ h3 {
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+}
+
+em {
+    font-style: normal;
+    font-weight: 200;
+    color: white;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;
+}
+
+td {
+    border: solid 1px;
 }
 
 .header__nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    font-size: 1.5rem;
+
+    &__logo {
+        height: 17.875rem;
+        width: 17.875rem;
+    }
+
     &__sites {
         list-style: none;
         margin: 0;
-        padding: 0;
+        padding: 0rem;
         display: flex;
+
+        li {
+            align-self: center;
+        }
+
         a {
             padding: 1rem;
         }
     }
+
     &__social {
         list-style: none;
+        display: flex;
         margin: 0;
         padding: 0;
+        width: $width-logo;
+        justify-content: center;
+
+        li {
+            align-self: center;
+        }
+
+        a {
+            padding: 1rem;
+        }
     }
 }
 
@@ -95,14 +132,15 @@ p {
 
     img {
         width: 100%;
-        height: auto;
-        border-radius: 5rem;
+        height: 16.25rem;
+        object-fit: cover;
+        border-radius: 2rem;
     }
 
     &__images {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        padding: 0 2rem;
+        margin: 0 2rem;
 
         &__content {
             display: flex;
@@ -124,14 +162,15 @@ p {
 
     img {
         width: 100%;
-        height: auto;
-        border-radius: 5rem;
+        height: 16.25rem;
+        object-fit: cover;
+        border-radius: 2rem;
     }
 
     &__images {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        padding: 0 2rem;
+        margin: 0 2rem;
 
         &__content {
             display: flex;
@@ -154,6 +193,6 @@ p {
     img {
         width: 50%;
         height: auto;
-        border-radius: 5rem;
+        border-radius: 2rem;
     }
 }
