@@ -13,9 +13,12 @@ body {
 
 a {
   color: #ff6900;
+  text-decoration: none;
 }
 a:hover {
-  text-decoration: none;
+  background-color: #ff6900;
+  color: #111111;
+  border-radius: 1rem;
 }
 
 h2 {
@@ -34,7 +37,6 @@ p {
 
 em {
   font-style: normal;
-  font-weight: 200;
   color: white;
 }
 
@@ -169,4 +171,101 @@ td {
   width: 50%;
   height: auto;
   border-radius: 2rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 45rem;
+  margin: 2rem 0;
+}
+footer table {
+  width: 100%;
+}
+footer table tbody {
+  width: 100%;
+}
+footer table tr {
+  width: 100%;
+}
+footer table td {
+  padding: 1rem;
+  border: solid 1px;
+}
+footer table td:first-child {
+  width: 50%;
+}
+footer table td:nth-child(2) {
+  width: 50%;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+footer span {
+  display: block;
+}
+footer a {
+  text-decoration-color: white;
+}
+footer .contact {
+  margin: 3rem auto;
+  max-width: 25rem;
+}
+footer .contact form {
+  justify-items: center;
+  width: inherit;
+}
+footer .contact h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 3rem 0;
+}
+footer .contact input,
+footer .contact textarea {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0 2rem 0;
+  padding: 0.5rem;
+  background-color: #111111;
+  border: 1px solid #EFEFEF;
+  color: #ff6900;
+  box-sizing: border-box;
+}
+footer .contact input {
+  height: 2rem;
+}
+footer .contact input[type=submit] {
+  background-color: #007cba;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  border: none;
+  height: 3rem;
+  border-radius: 0.2rem;
+}
+footer .contact textarea {
+  height: 10rem;
+}
+footer .imprint {
+  margin-bottom: 4rem;
+}
+footer .imprint a {
+  display: flex;
+  align-self: center;
+  text-decoration: none;
+}
+
+.imprint span {
+  display: block;
+}
+
+.law, .education {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
 }/*# sourceMappingURL=style.css.map */
