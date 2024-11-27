@@ -15,11 +15,6 @@ a {
   color: #ff6900;
   text-decoration: none;
 }
-a:hover {
-  background-color: #ff6900;
-  color: #111111;
-  border-radius: 1rem;
-}
 
 h2 {
   font-size: 3rem;
@@ -64,12 +59,23 @@ td {
   margin: 0;
   padding: 0rem;
   display: flex;
+  gap: 1rem;
+}
+.header__nav__sites__active {
+  background-color: #ff6900;
+  color: #111111;
 }
 .header__nav__sites li {
   align-self: center;
 }
 .header__nav__sites a {
-  padding: 1rem;
+  border: 1px solid #ff6900;
+  border-radius: 1rem;
+  padding: 0.75rem;
+}
+.header__nav__sites a:hover {
+  background-color: #ff6900;
+  color: #111111;
 }
 .header__nav__social {
   list-style: none;
@@ -189,6 +195,9 @@ footer table tbody {
 footer table tr {
   width: 100%;
 }
+footer table tr .tr__socials {
+  padding: 0 25%;
+}
 footer table td {
   padding: 1rem;
   border: solid 1px;
@@ -235,6 +244,11 @@ footer .contact textarea {
   color: #ff6900;
   box-sizing: border-box;
 }
+footer .contact input:focus,
+footer .contact textarea:focus {
+  outline-color: #ff6900;
+  border-color: #ff6900;
+}
 footer .contact input {
   height: 2rem;
 }
@@ -263,7 +277,8 @@ footer .imprint a {
   display: block;
 }
 
-.law, .education {
+.law,
+.education {
   width: 80%;
   display: flex;
   flex-direction: column;
