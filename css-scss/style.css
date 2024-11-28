@@ -4,6 +4,22 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  overflow: auto;
+  padding: 20px;
+}
+html::-webkit-scrollbar {
+  width: 6.25rem;
+}
+html::-webkit-scrollbar-thumb {
+  background: url("../images/car-scrollbar.png") no-repeat center center;
+  background-size: contain;
+  border-radius: 0.5rem;
+}
+html::-webkit-scrollbar-track {
+  border-radius: 0.5rem;
+}
+
 body {
   background-color: #111111;
   color: #ff6900;
@@ -239,7 +255,7 @@ footer .contact textarea {
   width: 100%;
   margin: 0.5rem 0 2rem 0;
   padding: 0.5rem;
-  background-color: #111111;
+  background-color: transparent;
   border: 1px solid #EFEFEF;
   color: #ff6900;
   box-sizing: border-box;
@@ -247,7 +263,6 @@ footer .contact textarea {
 footer .contact input:focus,
 footer .contact textarea:focus {
   outline-color: #ff6900;
-  border-color: #ff6900;
 }
 footer .contact input {
   height: 2rem;

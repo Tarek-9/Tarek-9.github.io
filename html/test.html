@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bild als Scrollbar</title>
+    <style>
+        /* Container mit Inhalt, der Scrollen ermöglicht */
+        .scrollable-container {
+            
+        }
+
+        /* Stil der vertikalen Scrollbar */
+        .scrollable-container::-webkit-scrollbar {
+            width: 16px; /* Breite der Scrollbar */
+        }
+
+        /* Bild als Daumen der Scrollbar */
+        .scrollable-container::-webkit-scrollbar-thumb {
+            background: url('https://picsum.photos/200/300') no-repeat center center; /* Bild als Daumen */
+            background-size: cover; /* Bild füllt die gesamte Scrollbar */
+            border-radius: 8px; /* Abgerundete Ecken für die Scrollbar */
+        }
+
+        /* Stil der Scrollbar-Hintergrund (Track) */
+        .scrollable-container::-webkit-scrollbar-track {
+            background: #e0e0e0; /* Hintergrund der Scrollbar */
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-container">
+        <p>Hier ist viel Text, um das Scrollen zu ermöglichen...</p>
+        <p>Hier ist viel Text, um das Scrollen zu ermöglichen...</p>
+        <p>Hier ist viel Text, um das Scrollen zu ermöglichen...</p>
+        <p>Hier ist viel Text, um das Scrollen zu ermöglichen...</p>
+        <p>Hier ist viel Text, um das Scrollen zu ermöglichen...</p>
+        <p>Hier ist viel Text, um das Scrollen zu ermöglichen...</p>
+        <p>Hier ist viel Text, um das Scrollen zu ermöglichen...</p>
+    </div>
+</body>
+</html>

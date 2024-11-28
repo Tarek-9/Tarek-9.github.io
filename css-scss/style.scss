@@ -13,6 +13,24 @@ $width-logo: 17.875rem;
 $second-color: #0f4438;
 $border-color: #EFEFEF;
 
+html {
+    overflow: auto;
+    padding: 20px;
+    &::-webkit-scrollbar {
+        width: 6.25rem;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: url('../images/car-scrollbar.png') no-repeat center center;
+        background-size: contain;
+        border-radius: 0.5rem;
+    }
+    &::-webkit-scrollbar-track {
+        // background: url("../images/route-scrollbar.jpg") no-repeat; // Ich muss das Streckenbild noch länger machen
+        // background-size: cover; 
+        border-radius: 0.5rem;
+    }
+}
+
 body {
     background-color: $background-color;
     color: $font-color;
@@ -285,7 +303,7 @@ footer {
             width: 100%;
             margin: 0.5rem 0 2rem 0;
             padding: 0.5rem;
-            background-color: $background-color;
+            background-color: transparent;
             border: 1px solid $border-color;
             color: $font-color;
             box-sizing: border-box;
@@ -294,7 +312,6 @@ footer {
         input:focus,
         textarea:focus {
             outline-color: $font-color;
-            border-color: $font-color;
         }
 
         input {
