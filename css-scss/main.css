@@ -1,9 +1,3 @@
-@font-face {
-  font-family: "Inter";
-  src: url(../schfriftart/Inter/Inter-VariableFont_opszwght.ttf);
-  font-weight: normal;
-  font-style: normal;
-}
 html {
   overflow: auto;
   padding: 20px;
@@ -61,6 +55,12 @@ td {
   border: solid 1px;
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url(../schfriftart/Inter/Inter-VariableFont_opszwght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
 .header__nav {
   display: flex;
   justify-content: space-between;
@@ -106,90 +106,6 @@ td {
 }
 .header__nav__social a {
   padding: 1rem;
-}
-
-#index .introduction__text {
-  width: 40rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-self: center;
-  text-align: center;
-}
-#index .introduction__courses {
-  width: 40rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-self: center;
-  border: #ff6900 solid thin;
-  margin: 1.5rem;
-  padding: 1rem;
-}
-#index .introduction__courses span {
-  color: white;
-}
-#index .vehicles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#index .vehicles img {
-  width: 100%;
-  height: 16.25rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 2rem;
-}
-#index .vehicles__images {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 2rem;
-}
-#index .vehicles__images__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-}
-#index .vehicles__images__content span {
-  margin: 1rem;
-}
-#index .employees {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#index .employees img {
-  width: 100%;
-  height: 16.25rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 2rem;
-}
-#index .employees__images {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 2rem;
-}
-#index .employees__images__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-}
-#index .employees__images__content span {
-  margin: 1rem;
-}
-#index .rooms {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#index .rooms img {
-  width: 50%;
-  height: auto;
-  border-radius: 2rem;
 }
 
 footer {
@@ -283,6 +199,90 @@ footer .imprint a {
   display: flex;
   align-self: center;
   text-decoration: none;
+}
+
+#index .introduction__text {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+}
+#index .introduction__courses {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  border: #ff6900 solid thin;
+  margin: 1.5rem;
+  padding: 1rem;
+}
+#index .introduction__courses span {
+  color: white;
+}
+#index .vehicles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#index .vehicles img {
+  width: 100%;
+  height: 16.25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2rem;
+}
+#index .vehicles__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 2rem;
+}
+#index .vehicles__images__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+#index .vehicles__images__content span {
+  margin: 1rem;
+}
+#index .employees {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#index .employees img {
+  width: 100%;
+  height: 16.25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2rem;
+}
+#index .employees__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 2rem;
+}
+#index .employees__images__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+#index .employees__images__content span {
+  margin: 1rem;
+}
+#index .rooms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#index .rooms img {
+  width: 50%;
+  height: auto;
+  border-radius: 2rem;
 }
 
 .imprint span {
