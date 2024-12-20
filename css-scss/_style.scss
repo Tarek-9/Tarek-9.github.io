@@ -1,12 +1,5 @@
 @use 'varaibles' as *;
 
-@font-face {
-  font-family: 'Inter';
-  src: url(../schfriftart/Inter/Inter-VariableFont_opsz\wght.ttf);
-  font-weight: normal;
-  font-style: normal;
-}
-
 .header__nav {
   display: flex;
   justify-content: space-between;

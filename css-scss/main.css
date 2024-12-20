@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../schfriftart/Inter/Inter-VariableFont_opszwght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   overflow: auto;
   padding: 20px;
@@ -55,12 +61,6 @@ td {
   border: solid 1px;
 }
 
-@font-face {
-  font-family: "Inter";
-  src: url(../schfriftart/Inter/Inter-VariableFont_opszwght.ttf);
-  font-weight: normal;
-  font-style: normal;
-}
 .header__nav {
   display: flex;
   justify-content: space-between;
