@@ -1,0 +1,12 @@
+- Die Webseite soaufbauen, dass es ein Auto gibt, was sich rumfahren lässt so wie Mark mir das gezeigt hat?
+
+- Fehler bei der Darstellung von der Navigation, wenn der Bildschirm zuklein ist (Der Text soll sich nicht umbrechen)
+- Die Scrollbar geht nicht über die ganze Seite
+- Tabelle bei Preisen wird noch nicht richtig angezeigt
+- Die Tabelle bei der Index unten ist noch nicht Symetrische
+- Bei dem Impressum kann raus, dass sich der der Client mit dem Google Server verbindent. Das passsiert nicht mehr. Ich habe die Schriftart glaube ich heruntergeladen
+- Bei der Jobs html muss der Text auch noch angepasst werden
+- Die Nav Punkte können besser gestaltete werden.
+- Die Webseite (Bilder) laden noch zu lange. Vielleicht fixe ich das mit "load: lazy" oder so hieß das.
+- Vielleicht mehr Padding auf dem Ende der Webseite?
+- Mobiele Version muss ncoh gemacht werden
