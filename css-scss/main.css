@@ -222,6 +222,7 @@ footer .imprint a {
   align-items: center;
   justify-self: center;
   border: #ff6900 solid thin;
+  gap: 0.5rem;
   margin: 1.5rem;
   padding: 1rem;
 }
