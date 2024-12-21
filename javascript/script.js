@@ -24,10 +24,10 @@ document.querySelector(".contact__form").addEventListener("submit", (e) => {
     })
         .then((response) => {
             if (response.ok) {
-                alert("Nachricht erfolgreich an Discord gesendet!");
+                // alert("Nachricht erfolgreich an Discord gesendet!");
                 location.reload();
             } else {
-                alert("Fehler beim Senden an Discord.");
+                alert("Es gibt ein Fehler beim Senden der Nachricht. Versuche es später nochmal.");
             }
         })
         .catch((error) => console.error("Fehler:", error));
