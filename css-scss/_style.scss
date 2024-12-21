@@ -269,6 +269,14 @@ footer {
   }
 }
 
+#price{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1.5rem;
+}
+
 .imprint {
   span {
     display: block;
@@ -278,7 +286,7 @@ footer {
 #imprint,
 #jobs,
 #education {
-  width: fit-content;
+  width: 43.75rem;
   display: flex;
   flex-direction: column;
   justify-self: center;
