@@ -4,17 +4,13 @@ html {
   overflow: auto;
   padding: 20px;
   &::-webkit-scrollbar {
-    width: 6.25rem;
+    width: 6.25rem; // Breite der Scrollleiste
   }
+
   &::-webkit-scrollbar-thumb {
     background: url('../images/car-scrollbar.png') no-repeat center center;
-    background-size: contain;
-    border-radius: 0.5rem;
-  }
-  &::-webkit-scrollbar-track {
-    // background: url("../images/route-scrollbar.jpg") no-repeat; // Ich muss das Streckenbild noch länger machen
-    // background-size: cover;
-    border-radius: 0.5rem;
+    background-size: contain; // Skaliert das Bild proportional
+    border-radius: 0.5rem; // Rundet die Ecken des Daumens
   }
 }
 
