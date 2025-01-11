@@ -2,57 +2,16 @@
 
 @media only screen and (min-width: $breakpoint-desktop) {
   .header__nav {
-    display: flex;
     justify-content: space-between;
-    font-size: 1.5rem;
-
-    &__logo {
-      height: 17.875rem;
-      width: 17.875rem;
-    }
 
     &__sites {
-      list-style: none;
-      margin: 0;
-      padding: 0rem;
       display: flex;
       justify-content: center;
-      gap: 1rem;
-
-      &__active {
-        background-color: $font-color;
-        color: $background-color;
-      }
-
-      li {
-        align-self: center;
-      }
-    }
-
-    &__social {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-      width: $width-logo;
-      justify-content: center;
-
-      li {
-        align-self: center;
-      }
-
-      a {
-        padding: 1rem;
-      }
     }
   }
 
   footer {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
     width: 45rem;
-    margin: 2rem 0;
 
     table {
       width: 100%;
@@ -63,170 +22,32 @@
 
       tr {
         width: 100%;
-
-        .tr__socials {
-          padding: 0 25%;
-        }
       }
-
-      td {
-        padding: 1rem;
-        border: solid 1px;
-
-        &:first-child {
-          width: 50%;
-        }
-
-        &:nth-child(2) {
-          width: 50%;
-        }
-      }
-    }
-
-    div {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-
-    span {
-      display: block;
-    }
-
-    a {
-      text-decoration-color: white;
-    }
-
-    .contact {
-      margin: 3rem auto;
-      max-width: 30rem;
-
-      &__form {
-        justify-items: center;
-        width: inherit;
-      }
-
-      h3 {
-        font-size: 2rem;
-        text-transform: uppercase;
-        font-weight: bold;
-        margin: 3rem 0;
-      }
-
-      input,
-      textarea {
-        display: block;
-        width: 100%;
-        margin: 0.5rem 0 2rem 0;
-        padding: 0.5rem;
-        background-color: transparent;
-        border: 1px solid $border-color;
-        color: $font-color;
-        box-sizing: border-box;
-      }
-
-      input:focus,
-      textarea:focus {
-        outline-color: $font-color;
-      }
-
-      input {
-        height: 2rem;
-      }
-
-      input[type='submit'] {
-        background-color: $background-color-button;
-        color: white;
-        font-family: $font-family;
-        font-size: 1rem;
-        border: none;
-        height: 3rem;
-        border-radius: 0.2rem;
-      }
-
-      textarea {
-        height: 10rem;
-      }
-    }
-
-    .imprint {
-      a {
-        display: flex;
-        align-self: center;
-        text-decoration: none;
-      }
-      margin-bottom: 4rem;
     }
   }
 
   #index {
     .introduction {
-      &__text {
-        width: 40rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-self: center;
-        text-align: center;
-      }
-
       &__courses {
         width: 40rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-self: center;
-        border: $font-color solid thin;
-        gap: 0.5rem;
-        margin: 1.5rem;
-        padding: 1rem;
-
-        span {
-          color: white;
-        }
       }
     }
 
     .vehicles {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
       img {
-        width: 100%;
         height: 16.25rem;
-        object-fit: cover;
-        border-radius: 2rem;
       }
 
       &__images {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin: 0 2rem;
-
-        &__content {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 1rem;
-
-          span {
-            margin: 1rem;
-          }
-        }
       }
     }
 
     .employees {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
       img {
-        width: 100%;
         height: 16.25rem;
-        object-fit: cover;
-        border-radius: 2rem;
       }
 
       &__images {
@@ -234,54 +55,14 @@
         grid-template-columns: 1fr 1fr 1fr;
         margin: 0 2rem;
         width: auto;
-
-        &__content {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 1rem;
-
-          span {
-            margin: 1rem;
-          }
-        }
       }
     }
 
     .rooms {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
       img {
         min-width: 44rem;
         width: 50%;
-        height: auto;
-        border-radius: 2rem;
       }
     }
-  }
-
-  #price {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3rem;
-    font-size: 1.5rem;
-  }
-
-  .imprint {
-    span {
-      display: block;
-    }
-  }
-
-  #imprint,
-  #jobs,
-  #education {
-    width: 43.75rem;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
   }
 }

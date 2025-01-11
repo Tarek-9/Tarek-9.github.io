@@ -11,16 +11,7 @@ body {
 html {
   overflow: auto;
   padding: 1.25rem;
-}
-@media only screen and (min-width: 992px) {
-  html::-webkit-scrollbar {
-    width: 6.25rem;
-  }
-  html::-webkit-scrollbar-thumb {
-    background: url("../images/car-scrollbar.png") no-repeat center center;
-    background-size: contain;
-    border-radius: 0.5rem;
-  }
+  padding-bottom: 0;
 }
 
 body {
@@ -72,8 +63,9 @@ td {
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
-.header__nav > a {
+.header__nav > div {
   display: flex;
   justify-content: center;
 }
@@ -87,10 +79,15 @@ td {
   padding: 0rem;
   display: grid;
   gap: 1rem;
-  margin: 3rem 0;
+  margin: 2rem 0;
+}
+.header__nav__sites a {
+  padding: 1.25rem;
 }
 .header__nav__sites__active {
   background-color: #ff6900;
+}
+.header__nav__sites__active a {
   color: #111111;
 }
 .header__nav__sites li {
@@ -98,7 +95,6 @@ td {
   white-space: nowrap;
   border: 1px solid #ff6900;
   border-radius: 0.5rem;
-  padding: 1.25rem;
   display: flex;
   justify-content: center;
 }
@@ -114,14 +110,14 @@ td {
   margin: 0;
   padding: 0;
   width: 100%;
-  gap: 25%;
+  gap: 15%;
   justify-content: center;
 }
 .header__nav__social li {
   align-self: center;
 }
-.header__nav__social a {
-  padding: 1rem;
+.header__nav__social li a {
+  display: flex;
 }
 
 footer {
@@ -129,7 +125,7 @@ footer {
   flex-direction: column;
   justify-self: center;
   width: 100%;
-  margin: 2rem 0;
+  margin: 3rem 0;
   max-width: 45rem;
 }
 footer table tr {
@@ -200,12 +196,10 @@ footer .contact input[type=submit] {
   border: none;
   height: 3rem;
   border-radius: 0.2rem;
+  margin-bottom: 0;
 }
 footer .contact textarea {
   height: 10rem;
-}
-footer .imprint {
-  margin-bottom: 4rem;
 }
 footer .imprint a {
   display: flex;
@@ -221,6 +215,9 @@ footer .imprint a {
   align-items: center;
   justify-self: center;
   text-align: center;
+}
+#index .introduction__text h2 {
+  margin-top: 0;
 }
 #index .introduction__courses {
   max-width: 40rem;
@@ -322,49 +319,14 @@ footer .imprint a {
 
 @media only screen and (min-width: 992px) {
   .header__nav {
-    display: flex;
     justify-content: space-between;
-    font-size: 1.5rem;
-  }
-  .header__nav__logo {
-    height: 17.875rem;
-    width: 17.875rem;
   }
   .header__nav__sites {
-    list-style: none;
-    margin: 0;
-    padding: 0rem;
     display: flex;
     justify-content: center;
-    gap: 1rem;
-  }
-  .header__nav__sites__active {
-    background-color: #ff6900;
-    color: #111111;
-  }
-  .header__nav__sites li {
-    align-self: center;
-  }
-  .header__nav__social {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    width: 17.875rem;
-    justify-content: center;
-  }
-  .header__nav__social li {
-    align-self: center;
-  }
-  .header__nav__social a {
-    padding: 1rem;
   }
   footer {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
     width: 45rem;
-    margin: 2rem 0;
   }
   footer table {
     width: 100%;
@@ -375,141 +337,19 @@ footer .imprint a {
   footer table tr {
     width: 100%;
   }
-  footer table tr .tr__socials {
-    padding: 0 25%;
-  }
-  footer table td {
-    padding: 1rem;
-    border: solid 1px;
-  }
-  footer table td:first-child {
-    width: 50%;
-  }
-  footer table td:nth-child(2) {
-    width: 50%;
-  }
-  footer div {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  footer span {
-    display: block;
-  }
-  footer a {
-    text-decoration-color: white;
-  }
-  footer .contact {
-    margin: 3rem auto;
-    max-width: 30rem;
-  }
-  footer .contact__form {
-    justify-items: center;
-    width: inherit;
-  }
-  footer .contact h3 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 3rem 0;
-  }
-  footer .contact input,
-  footer .contact textarea {
-    display: block;
-    width: 100%;
-    margin: 0.5rem 0 2rem 0;
-    padding: 0.5rem;
-    background-color: transparent;
-    border: 1px solid #efefef;
-    color: #ff6900;
-    box-sizing: border-box;
-  }
-  footer .contact input:focus,
-  footer .contact textarea:focus {
-    outline-color: #ff6900;
-  }
-  footer .contact input {
-    height: 2rem;
-  }
-  footer .contact input[type=submit] {
-    background-color: #007cba;
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-size: 1rem;
-    border: none;
-    height: 3rem;
-    border-radius: 0.2rem;
-  }
-  footer .contact textarea {
-    height: 10rem;
-  }
-  footer .imprint {
-    margin-bottom: 4rem;
-  }
-  footer .imprint a {
-    display: flex;
-    align-self: center;
-    text-decoration: none;
-  }
-  #index .introduction__text {
-    width: 40rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: center;
-    text-align: center;
-  }
   #index .introduction__courses {
     width: 40rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: center;
-    border: #ff6900 solid thin;
-    gap: 0.5rem;
-    margin: 1.5rem;
-    padding: 1rem;
-  }
-  #index .introduction__courses span {
-    color: white;
-  }
-  #index .vehicles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   #index .vehicles img {
-    width: 100%;
     height: 16.25rem;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 2rem;
   }
   #index .vehicles__images {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 2rem;
   }
-  #index .vehicles__images__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
-  #index .vehicles__images__content span {
-    margin: 1rem;
-  }
-  #index .employees {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   #index .employees img {
-    width: 100%;
     height: 16.25rem;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 2rem;
   }
   #index .employees__images {
     display: grid;
@@ -517,42 +357,8 @@ footer .imprint a {
     margin: 0 2rem;
     width: auto;
   }
-  #index .employees__images__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
-  #index .employees__images__content span {
-    margin: 1rem;
-  }
-  #index .rooms {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   #index .rooms img {
     min-width: 44rem;
     width: 50%;
-    height: auto;
-    border-radius: 2rem;
-  }
-  #price {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3rem;
-    font-size: 1.5rem;
-  }
-  .imprint span {
-    display: block;
-  }
-  #imprint,
-  #jobs,
-  #education {
-    width: 43.75rem;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
   }
 }/*# sourceMappingURL=main.css.map */

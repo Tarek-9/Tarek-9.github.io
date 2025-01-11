@@ -3,18 +3,19 @@
 html {
   overflow: auto;
   padding: 1.25rem;
+  padding-bottom: 0;
 
-  @media only screen and (min-width: $breakpoint-desktop) {
-    &::-webkit-scrollbar {
-      width: 6.25rem; // Breite der Scrollleiste
-    }
+  // @media only screen and (min-width: $breakpoint-desktop) {
+  //   &::-webkit-scrollbar {
+  //     width: 6.25rem; // Breite der Scrollleiste
+  //   }
 
-    &::-webkit-scrollbar-thumb {
-      background: url('../images/car-scrollbar.png') no-repeat center center;
-      background-size: contain; // Skaliert das Bild proportional
-      border-radius: 0.5rem; // Rundet die Ecken des Daumens
-    }
-  }
+  //   &::-webkit-scrollbar-thumb {
+  //     background: url('../images/car-scrollbar.png') no-repeat center center;
+  //     background-size: contain; // Skaliert das Bild proportional
+  //     border-radius: 0.5rem; // Rundet die Ecken des Daumens
+  //   }
+  // }
 }
 
 body {
