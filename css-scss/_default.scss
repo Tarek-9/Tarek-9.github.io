@@ -1,0 +1,60 @@
+@use 'varaibles' as *;
+
+html {
+  overflow: auto;
+  padding: 20px;
+  &::-webkit-scrollbar {
+    width: 6.25rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: url('../images/car-scrollbar.png') no-repeat center center;
+    background-size: contain;
+    border-radius: 0.5rem;
+  }
+  &::-webkit-scrollbar-track {
+    // background: url("../images/route-scrollbar.jpg") no-repeat; // Ich muss das Streckenbild noch länger machen
+    // background-size: cover;
+    border-radius: 0.5rem;
+  }
+}
+
+body {
+  background-color: $background-color;
+  color: $font-color;
+  font-family: $font-family;
+  font-size: 1rem;
+}
+
+a {
+  color: $font-color;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+em {
+  font-style: normal;
+  color: white;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+}
+
+td {
+  border: solid 1px;
+}

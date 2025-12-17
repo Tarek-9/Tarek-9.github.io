@@ -1,0 +1,300 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../schfriftart/Inter/Inter-VariableFont_opszwght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  overflow: auto;
+  padding: 20px;
+}
+html::-webkit-scrollbar {
+  width: 6.25rem;
+}
+html::-webkit-scrollbar-thumb {
+  background: url("../images/car-scrollbar.png") no-repeat center center;
+  background-size: contain;
+  border-radius: 0.5rem;
+}
+html::-webkit-scrollbar-track {
+  border-radius: 0.5rem;
+}
+
+body {
+  background-color: #111111;
+  color: #ff6900;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  color: #ff6900;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+em {
+  font-style: normal;
+  color: white;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+}
+
+td {
+  border: solid 1px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.header__nav__logo {
+  height: 17.875rem;
+  width: 17.875rem;
+}
+.header__nav__sites {
+  list-style: none;
+  margin: 0;
+  padding: 0rem;
+  display: flex;
+  gap: 1rem;
+}
+.header__nav__sites__active {
+  background-color: #ff6900;
+  color: #111111;
+}
+.header__nav__sites li {
+  align-self: center;
+}
+.header__nav__sites a {
+  border: 1px solid #ff6900;
+  border-radius: 1rem;
+  padding: 0.75rem;
+}
+.header__nav__sites a:hover {
+  background-color: #ff6900;
+  color: #111111;
+}
+.header__nav__social {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 17.875rem;
+  justify-content: center;
+}
+.header__nav__social li {
+  align-self: center;
+}
+.header__nav__social a {
+  padding: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 45rem;
+  margin: 2rem 0;
+}
+footer table {
+  width: 100%;
+}
+footer table tbody {
+  width: 100%;
+}
+footer table tr {
+  width: 100%;
+}
+footer table tr .tr__socials {
+  padding: 0 25%;
+}
+footer table td {
+  padding: 1rem;
+  border: solid 1px;
+}
+footer table td:first-child {
+  width: 50%;
+}
+footer table td:nth-child(2) {
+  width: 50%;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+footer span {
+  display: block;
+}
+footer a {
+  text-decoration-color: white;
+}
+footer .contact {
+  margin: 3rem auto;
+  max-width: 25rem;
+}
+footer .contact__form {
+  justify-items: center;
+  width: inherit;
+}
+footer .contact h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 3rem 0;
+}
+footer .contact input,
+footer .contact textarea {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0 2rem 0;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: 1px solid #efefef;
+  color: #ff6900;
+  box-sizing: border-box;
+}
+footer .contact input:focus,
+footer .contact textarea:focus {
+  outline-color: #ff6900;
+}
+footer .contact input {
+  height: 2rem;
+}
+footer .contact input[type=submit] {
+  background-color: #007cba;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  border: none;
+  height: 3rem;
+  border-radius: 0.2rem;
+}
+footer .contact textarea {
+  height: 10rem;
+}
+footer .imprint {
+  margin-bottom: 4rem;
+}
+footer .imprint a {
+  display: flex;
+  align-self: center;
+  text-decoration: none;
+}
+
+#index .introduction__text {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+}
+#index .introduction__courses {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  border: #ff6900 solid thin;
+  margin: 1.5rem;
+  padding: 1rem;
+}
+#index .introduction__courses span {
+  color: white;
+}
+#index .vehicles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#index .vehicles img {
+  width: 100%;
+  height: 16.25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2rem;
+}
+#index .vehicles__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 2rem;
+}
+#index .vehicles__images__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+#index .vehicles__images__content span {
+  margin: 1rem;
+}
+#index .employees {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#index .employees img {
+  width: 100%;
+  height: 16.25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2rem;
+}
+#index .employees__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 2rem;
+}
+#index .employees__images__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+#index .employees__images__content span {
+  margin: 1rem;
+}
+#index .rooms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#index .rooms img {
+  width: 50%;
+  height: auto;
+  border-radius: 2rem;
+}
+
+.imprint span {
+  display: block;
+}
+
+#imprint,
+#jobs,
+#education {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}/*# sourceMappingURL=main.css.map */
